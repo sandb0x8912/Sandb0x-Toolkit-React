@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 
 
-// Create a new component.  This component should produce some HTML
 
-const App = () => // FAT ARROW also same as saying function()
+class App extends Component 
 {
-    return <div> HELLO WORLD</div>
+
+    constructor(props)
+    {
+        super(props);
+
+        this.state = { coinName: '' };
+    }
+
+    render()
+    {
+        return (
+    
+            <div>
+                    A COMPONENT GOES HERE..
+            </div>
+        
+         );
+    }
+    
 }
 
 
